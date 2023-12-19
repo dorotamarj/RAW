@@ -15,7 +15,7 @@ __author__ = "Dorota Marjanska"
 __copyright__ = "Copyright 2023"
 __credits__ = ["Dorota Marjanska" , "Joanna Kozuchowska", "Marcin Rajner"]
 __license__ = "GPL"
-__version__ = "1.0.0"
+__version__ = "1.0.1"
 __maintainer__ = "Dorota Marjanska"
 __email__ = "dorota.marjanska@pw.edu.pl"
 __status__ = "Production"
@@ -367,7 +367,7 @@ def dme_odleglosc(Xp, Xk):
     
     # jeśli podajemy jeden punkt: spłaszaczamy wymiary do tablicy jednowymiarowej, żeby było wygodniej adresować do macierzy A
     if dme.shape[0] == 1:
-        dme.reshape(-1)
+        dme = dme.reshape(-1)
     
     return dme
 
